@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  & ~ & {
+    margin: {
+      top: 15px;
+    }
+
+    padding: {
+      top: 25px;
+    }
+
+    border: {
+      top: {
+        color: darkgrey;
+        width: 1px;
+        style: solid;
+      }
+    }
+  }
+}
+
+.header {
+  font: {
+    size: 21px;
+    weight: bold;
+  }
+
+  & + .educationContainer {
+    margin: {
+      top: 20px;
+    }
+  }
+}
+
+.educationContainer {
+  padding: {
+    left: 20px;
+    right: 20px;
+  }
+}

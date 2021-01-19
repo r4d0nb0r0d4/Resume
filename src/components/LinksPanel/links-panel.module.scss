@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  padding: 5px 0;
+}
+
+.linkElement {
+  padding: 0 5px;
+
+  & ~ & {
+    border-left: {
+      color: black;
+      style: solid;
+      width: 1px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience {
+  & ~ & {
+    margin: {
+      top: 15px;
+    }
+
+    padding: {
+      top: 25px;
+    }
+
+    border: {
+      top: {
+        color: darkgrey;
+        width: 1px;
+        style: solid;
+      }
+    }
+  }
+}
+
+.header {
+  font: {
+    size: 21px;
+    weight: bold;
+  }
+
+  & + .experienceContainer {
+    margin: {
+      top: 20px;
+    }
+  }
+}
+
+.experienceContainer {
+  padding: {
+    left: 20px;
+    right: 20px;
+  }
+}

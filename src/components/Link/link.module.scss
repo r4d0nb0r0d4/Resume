@@ -1,0 +1,29 @@
+$icon-size: 24px;
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  height: $icon-size;
+  width: $icon-size;
+  pointer-events: none;
+}
+
+.title {
+  margin: {
+    left: 3px;
+  }
+
+  &.link {
+    &:hover {
+      color: darkolivegreen;
+    }
+
+    &:active {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  text-align: end;
+  width: 40%;
+
+  font: {
+    style: italic;
+    size: 15px;
+  }
+}
+
+.name {
+  width: 60%;
+
+  font: {
+    size: 16px;
+    weight: bold;
+  }
+}
+
+.description,
+.position,
+.projectName,
+.responsibilities,
+.technicalSummary {
+  text-align: justify;
+
+  & ~ & {
+    margin: {
+      top: 8px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.main {
+  display: flex;
+  margin: {
+    top: 30px;
+  }
+
+  .leftPanel {
+    width: 30%;
+  }
+
+  .content {
+    width: 70%;
+  }
+}
+
+.infoBlock {
+  & ~ & {
+    margin: {
+      top: 50px;
+    }
+  }
+}
+
+.languageBlock {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    font: {
+      size: 21px;
+      weight: bold;
+    }
+
+    & + .languagesInfo {
+      margin: {
+        top: 20px;
+      }
+    }
+  }
+}
